@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Blog - Bagonista Adventures</title>
+    <meta name="description" 
+          content="Watch our video blog highlighting the adventures that await at Ma-yo Beach, Bluegarden Resort, and Mundo Island.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="wave.png">
+</head>
+<body>
+    <header id="main-header" class="header-static">
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" 
+                     alt="Bagonista Adventures Logo" 
+                     class="logo">
+                <span class="brand-name">BAGONISTA Adventures</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="theme-switcher">
+                    <button id="theme-toggle-button" aria-label="Toggle light and dark mode">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+                <a href="contact.html" class="cta-button-header">Book Now</a>
+            </div>
+            <button class="hamburger" 
+                    aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Adventure Blog</h1>
+                <p>Watch our latest video entries from the islands</p>
+            </div>
+        </section>
+
+        <section class="container page-section reveal">
+            <div class="blog-post-container">
+                <h2>Bago City's Hidden Gem</h2>
+                <p class="post-meta">Posted on September 30, 2025</p>
+                
+                <div class="video-wrapper">
+                    <video controls 
+                           loop 
+                           muted 
+                           playsinline 
+                           src="blog_video.mp4"
+                           poster="cta-bg.jpg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="post-content">
+                    <p>
+                        Join us on a visual journey to the hidden gems of Bago City! This feature showcases the serene beauty of Ma-yo Beach, the exciting adventures at Bluegarden Resort, and the magical sunsets of Mundo Island. Experience the paradise that awaits you right here in our beloved city.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-bar">
+            <div class="cta-overlay"></div>
+            <div class="container cta-content">
+                <h2>Inspired to See More?</h2>
+                <p>Let us help you plan the perfect tropical getaway.</p>
+                <a href="destinations.html" class="cta-button">View All Destinations</a>
+            </div>
+        </section>
+    </main>
+    
+    <button id="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+   <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <h3 class="footer-title">BAGOnista Adventures</h3>
+                    <p>Your premier guide to the stunning coastal treasures of Lapu-Lapu City. This website is for educational purposes.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61578409210158" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul>
+                        <li><a href="#">Island Hopping</a></li>
+                        <li><a href="#">Beach Tours</a></li>
+                        <li><a href="#">Watersports Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                     <h3 class="footer-title">Contact</h3>
+                     <p><i class="fas fa-home"></i> Maribago Lapu-Lapu City, Mactan Island</p>
+                     <p><i class="fas fa-envelope"></i> bagonistaadventures    @gmail.com</p>
+                     
+                     <p><i class="fas fa-phone"></i> +63 992 976 3827</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BAGOnista Adventures. For Educational Purposes Only.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

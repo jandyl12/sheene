@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bagonista Adventures</title>
+    <meta name="description" 
+          content="Get in touch with Bagonista Adventures to book your tour or ask any questions. We'd love to help you plan your trip.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="wave.png">
+</head>
+<body>
+    <header id="main-header" class="header-static">
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" 
+                     alt="Bagonista Adventures Logo" 
+                     class="logo">
+                <span class="brand-name">BAGONISTA Adventures</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="theme-switcher">
+                    <button id="theme-toggle-button" aria-label="Toggle light and dark mode">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+                <a href="contact.html" class="cta-button-header">Book Now</a>
+            </div>
+            <button class="hamburger" 
+                    aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you! Send us a message for inquiries.</p>
+            </div>
+        </section>
+
+        <section class="container page-section reveal">
+            <div class="contact-layout">
+                <div id="contact-form-section">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to us through any of the following methods. We are always happy to help plan your perfect getaway.</p>
+                    <ul>
+                        <li><i class="fas fa-home"></i> Bago City, Negros Occidental</li>
+                        <li><i class="fas fa-envelope"></i> bagonistaadventures@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +63 992 976 3827</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <button id="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+   <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <h3 class="footer-title">BAGOnista Adventures</h3>
+                    <p>Your premier guide to the stunning coastal treasures of Lapu-Lapu City. This website is for educational purposes.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61578409210158" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul>
+                        <li><a href="#">Island Hopping</a></li>
+                        <li><a href="#">Beach Tours</a></li>
+                        <li><a href="#">Watersports Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                     <h3 class="footer-title">Contact</h3>
+                     <p><i class="fas fa-home"></i> Maribago Lapu-Lapu City, Mactan Island</p>
+                     <p><i class="fas fa-envelope"></i> bagonistaadventures    @gmail.com</p>
+                     
+                     <p><i class="fas fa-phone"></i> +63 992 976 3827</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BAGOnista Adventures. For Educational Purposes Only.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

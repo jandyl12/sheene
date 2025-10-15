@@ -1,0 +1,40 @@
+# Name of the workflow
+name: Deploy GitHub Pages
+
+# When the workflow will run
+on:
+  push:
+    branches:
+      - main # Triggers on push to the main branch
+
+# Add permissions for the deployment job
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A workflow run is made up of one or more jobs
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checks out your repository
+      - name: Checkout
+        uses: actions/checkout@v4 # UPDATED to v4
+        with:
+          lfs: true
+
+      # Step 2: GitHub's official action to prepare files
+      - name: Setup Pages
+        uses: actions/configure-pages@v4 # UPDATED to v4
+
+      # Step 3: Action to upload site files as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3 # UPDATED to v3
+        with:
+          path: '.'
+
+      # Step 4: GitHub's official action to deploy the files
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # UPDATED to v4
