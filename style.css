@@ -91,6 +91,15 @@ body.dark-mode #main-header:not(.header-scrolled):not(.header-static) .theme-swi
 
 .cta-button-header { display: inline-block; border: 2px solid var(--light-text); color: var(--light-text); padding: 8px 24px; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; }
 #main-header.header-scrolled .cta-button-header, #main-header.header-static .cta-button-header { border-color: var(--primary-color); color: var(--primary-color); }
+
+/* START: NEW CODE FIX */
+#main-header.header-scrolled .cta-button-header:hover,
+#main-header.header-static .cta-button-header:hover {
+    background: var(--primary-color);
+    color: var(--light-text);
+}
+/* END: NEW CODE FIX */
+
 .cta-button-header:hover { background: var(--primary-color); color: var(--light-text); }
 #main-header:not(.header-scrolled):not(.header-static) .cta-button-header:hover { background: var(--light-text); color: var(--primary-color); }
 .hamburger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; z-index: 2010; }
