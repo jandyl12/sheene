@@ -115,7 +115,7 @@ body.dark-mode #main-header:not(.header-scrolled):not(.header-static) .theme-swi
 #hero .cta-button:active { background-color: var(--sky-blue-color); color: var(--heading-color); transform: translateY(1px); }
 .destination-hero-section { padding: 10rem 0 5rem 0; background-color: var(--primary-color); text-align: center; }
 .destination-hero-section .hero-title, .destination-hero-section .hero-tagline { color: var(--light-text); }
-.destination-hero-section .hero-title { font-size: 3.5rem; }
+.destination-hero-section .hero-title { font-size: 3.0rem; }
 .destination-hero-section .hero-tagline { font-size: 1.2rem; }
 
 /* 6. GENERAL PAGE CONTENT & CTA BUTTONS */
