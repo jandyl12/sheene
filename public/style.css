@@ -227,7 +227,7 @@ body.dark-mode .map-wrapper iframe { filter: invert(100%) hue-rotate(180deg) con
 .contact-info i { color: var(--primary-color); font-size: 1.2rem; }
 
 /* 11. CTA BAR & FOOTER */
-.cta-bar { padding: 5rem 0; position: relative; text-align: center; color: var(--light-text); background: url('/background.png') no-repeat center center/cover; }
+.cta-bar { padding: 5rem 0; position: relative; text-align: center; color: var(--light-text); background: url('background.png') no-repeat center center/cover; }
 .cta-overlay { position: absolute; inset: 0; background-color: rgba(0, 119, 182, 0.75); }
 .cta-content { position: relative; }
 .cta-bar h2 { font-size: 2.5rem; margin-bottom: 1rem; }
