@@ -92,13 +92,11 @@ body.dark-mode #main-header:not(.header-scrolled):not(.header-static) .theme-swi
 .cta-button-header { display: inline-block; border: 2px solid var(--light-text); color: var(--light-text); padding: 8px 24px; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; }
 #main-header.header-scrolled .cta-button-header, #main-header.header-static .cta-button-header { border-color: var(--primary-color); color: var(--primary-color); }
 
-/* START: NEW CODE FIX */
 #main-header.header-scrolled .cta-button-header:hover,
 #main-header.header-static .cta-button-header:hover {
     background: var(--primary-color);
     color: var(--light-text);
 }
-/* END: NEW CODE FIX */
 
 .cta-button-header:hover { background: var(--primary-color); color: var(--light-text); }
 #main-header:not(.header-scrolled):not(.header-static) .cta-button-header:hover { background: var(--light-text); color: var(--primary-color); }
@@ -216,7 +214,7 @@ body.dark-mode .map-wrapper iframe { filter: invert(100%) hue-rotate(180deg) con
 .page-section { padding: 5rem 0; }
 .blog-post-container { max-width: 900px; margin: auto; }
 .video-wrapper { margin: 2rem auto; box-shadow: var(--box-shadow-medium); border-radius: var(--border-radius-md); overflow: hidden; }
-.video-wrapper video { width: 100%; display: block; }
+.video-wrapper video, .video-wrapper .fb-video { width: 100%; display: block; } /* Updated */
 .about-layout, .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); align-items: center; }
 .contact-layout { align-items: flex-start; }
 #contact-form-section { background: var(--card-bg-color); padding: 2rem; border-radius: var(--border-radius-md); box-shadow: var(--box-shadow-light); border: 1px solid var(--border-color); }
@@ -279,4 +277,11 @@ body.dark-mode .footer-bottom { background: #101010; }
     .activity-cards-grid.four-columns { grid-template-columns: 1fr; }
     .footer-main { text-align: center; }
     .footer-title { display: inline-block; }
+}
+
+/* 16. NEW STYLES FOR FALLBACK LINK */
+.facebook-fallback-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }

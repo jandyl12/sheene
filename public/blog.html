@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="wave.png">
 </head>
 <body>
-    <!-- 1. Facebook JavaScript SDK (Just after body tag) -->
+    <!-- Facebook JavaScript SDK -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="aBcDeFgH"></script>
 
@@ -69,7 +69,7 @@
                 <p class="post-meta">Posted on September 30, 2025</p>
                 
                 <div class="video-wrapper">
-                    <!-- 2. The Facebook Embedded Video Player -->
+                    <!-- The Facebook video embed will still try to load -->
                     <div class="fb-video" 
                          data-href="https://www.facebook.com/61578409210158/videos/4064466663768515" 
                          data-width="100%" 
@@ -77,6 +77,13 @@
                          data-autoplay="true">
                     </div>
                 </div>
+
+                <!-- START: NEW CLICKABLE FALLBACK LINK -->
+                <p class="facebook-fallback-link">
+                    If the video doesn't load, you can 
+                    <a href="https://www.facebook.com/61578409210158/videos/4064466663768515" target="_blank">watch it directly on Facebook</a>.
+                </p>
+                <!-- END: NEW CLICKABLE FALLBACK LINK -->
 
                 <div class="post-content">
                     <p>
