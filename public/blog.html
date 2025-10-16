@@ -19,6 +19,10 @@
     <link rel="icon" type="image/png" href="wave.png">
 </head>
 <body>
+    <!-- 1. Facebook JavaScript SDK (Just after body tag) -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="aBcDeFgH"></script>
+
     <header id="main-header" class="header-static">
         <div class="container">
             <a href="index.html" class="logo-container">
@@ -64,12 +68,15 @@
                 <h2>Bago City's Hidden Gem</h2>
                 <p class="post-meta">Posted on September 30, 2025</p>
                 
-    <div class="video-wrapper">
-    <video controls autoplay loop muted playsinline class="thumbnail">
-      <source src="vlog_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-</div>
+                <div class="video-wrapper">
+                    <!-- 2. The Facebook Embedded Video Player -->
+                    <div class="fb-video" 
+                         data-href="https://www.facebook.com/61578409210158/videos/4064466663768515" 
+                         data-width="100%" 
+                         data-show-text="false" 
+                         data-autoplay="true">
+                    </div>
+                </div>
 
                 <div class="post-content">
                     <p>
