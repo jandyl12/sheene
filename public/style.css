@@ -3,7 +3,7 @@
     BAGONISTA Adventures Stylesheet
     ---
     Author: Senior Web Developer
-    Version: 2.8
+    Version: 3.0 (Final Responsive Fixes)
     ---
     Table of Contents:
     1.  Design System (Variables)
@@ -214,7 +214,7 @@ body.dark-mode .map-wrapper iframe { filter: invert(100%) hue-rotate(180deg) con
 .page-section { padding: 5rem 0; }
 .blog-post-container { max-width: 900px; margin: auto; }
 .video-wrapper { margin: 2rem auto; box-shadow: var(--box-shadow-medium); border-radius: var(--border-radius-md); overflow: hidden; }
-.video-wrapper video, .video-wrapper .fb-video { width: 100%; display: block; } /* Updated */
+.video-wrapper video, .video-wrapper .fb-video { width: 100%; display: block; }
 .about-layout, .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); align-items: center; }
 .contact-layout { align-items: flex-start; }
 #contact-form-section { background: var(--card-bg-color); padding: 2rem; border-radius: var(--border-radius-md); box-shadow: var(--box-shadow-light); border: 1px solid var(--border-color); }
@@ -258,8 +258,14 @@ body.dark-mode .footer-bottom { background: #101010; }
     .main-nav.mobile-active ul { flex-direction: column; align-items: center; }
     .main-nav.mobile-active ul li { margin: 1.5rem 0; }
     .main-nav.mobile-active ul li a { color: var(--text-color); font-size: 1.8rem; }
-    .logo-container { flex-grow: 1; }
-    .header-right { gap: 0.5rem; }
+    
+    /* --- START: MOBILE HEADER LAYOUT FIX --- */
+    .header-right {
+        margin-left: auto; /* This pushes the right-side icons to the end */
+        gap: 0.5rem;
+    }
+    /* --- END: MOBILE HEADER LAYOUT FIX --- */
+
     .hamburger { display: block; z-index: 1001; }
     .destination-content-grid, .about-layout, .contact-layout, .image-text-block, .destination-intro-grid { grid-template-columns: 1fr; }
     .destination-intro-grid .destination-text-block { text-align: center; }
@@ -269,14 +275,30 @@ body.dark-mode .footer-bottom { background: #101010; }
 }
 
 @media (max-width: 768px) {
+    .destination-hero-section .hero-title { font-size: 2.5rem; }
     .hero-text { margin-top: -25vh; }
     .destination-main-title { font-size: 2.2rem; }
     .img-wrapper img { height: 250px; }
-    .gallery-slider { width: 300px; height: 350px; }
-    .gallery-nav-button { display: none; }
     .activity-cards-grid.four-columns { grid-template-columns: 1fr; }
     .footer-main { text-align: center; }
     .footer-title { display: inline-block; }
+
+    /* --- START: GALLERY RESPONSIVE FIX --- */
+    .gallery-slider { 
+        width: 100%; /* Allow slider to use full available width */
+        max-width: 300px; /* But not get too big */
+        height: 350px; 
+    }
+    .gallery-nav-button {
+        display: block !important; /* Make sure buttons are always visible on mobile */
+    }
+    .gallery-nav-button.prev-3d { 
+        left: -15px; /* Position buttons closer to the slider for mobile */
+    }
+    .gallery-nav-button.next-3d { 
+        right: -15px; /* Position buttons closer to the slider for mobile */
+    }
+    /* --- END: GALLERY RESPONSIVE FIX --- */
 }
 
 /* 16. NEW STYLES FOR FALLBACK LINK */
